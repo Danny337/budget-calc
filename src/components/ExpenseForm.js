@@ -13,7 +13,7 @@ export const ExpenseForm = ({charge,amount,handleCharge,handleAmount,handleSubmi
                 </div>
                 <div className="form-group">
                     <label htmlFor="amount">количество</label>
-                    <input className="form-control" type="number" name="amount" id="amount" placeholder='1300'
+                    <input className="form-control" type="number" name="amount" id="amount" placeholder='1300 ₽'
                     value={amount} onChange={handleAmount}/>
                 </div>
             </div>
