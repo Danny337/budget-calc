@@ -19,7 +19,7 @@ export const ExpenseForm = ({charge,amount,handleCharge,handleAmount,handleSubmi
             </div>
 
             <button type='submit' className='btn'>
-                {edit ? 'edit' : 'submit'}
+                {edit ? 'изменить' : 'добавить'}
                 <MdSend className='btn-icon' />
             </button>
 
