@@ -73,21 +73,21 @@ function App() {
       setAmount('');
     } else {
       // alert called
-      handleAlert({type: 'danger', text: 'charge cant be empty value and amount value has to be bigger than zero'});
+      handleAlert({type: 'danger', text: 'значение должно быть больше 0 и не быть пустым'});
     }
   }
 
   
   const clearItems = () => {
     setExpenses([]);
-    handleAlert({type: 'danger', text: ' all items deleted'});  
+    handleAlert({type: 'danger', text: ' все удалено'});  
   }
   
   const handleDelete = (id) => {
     let tempExpenses = expenses.filter(item => item.id !== id);
 
     setExpenses(tempExpenses);
-    handleAlert({type: 'danger', text: 'item deleted'});       
+    handleAlert({type: 'danger', text: 'удалено'});       
   }
   
   const handleEdit = (id) => {
