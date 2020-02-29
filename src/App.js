@@ -111,7 +111,7 @@ function App() {
       <ExpenseList expenses={expenses} clearItems={clearItems} handleDelete={handleDelete} handleEdit={handleEdit} />
     </main>
     <h1>
-      total spending: <span className='total'>
+      Итого расходов: <span className='total'>
         $ {expenses.reduce((acc,curr) => {
           return (acc += parseInt(curr.amount));
         }, 0)}
