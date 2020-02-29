@@ -112,7 +112,7 @@ function App() {
     </main>
     <h1>
       Итого расходов: <span className='total'>
-        $ {expenses.reduce((acc,curr) => {
+        ₽ {expenses.reduce((acc,curr) => {
           return (acc += parseInt(curr.amount));
         }, 0)}
       </span>
