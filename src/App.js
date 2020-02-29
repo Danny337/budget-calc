@@ -28,21 +28,21 @@ function App() {
   // edit item
   const [id, setId] = useState(0);
 
-  // ***** useEffect *****
+  
   useEffect(() => {
     localStorage.setItem('expenses', JSON.stringify(expenses));
   }, [expenses]);
 
   // ***** functionality *****
-  // handleCharge
+  
   const handleCharge = e => {
     setCharge(e.target.value)
   }
-  // handleAmount
+  
   const handleAmount = e => {
     setAmount(e.target.value)
   }
-  // handleAlert
+  
   const handleAlert = ({type,text}) => {
     setAlert({show: true, type,text});
     setTimeout(() => {
@@ -50,7 +50,7 @@ function App() {
     }, 3000)
   }
 
-  // handleSubmit
+  
   const handleSubmit = e => {
     e.preventDefault();
     if(charge !== '' && amount > 0) {
@@ -77,19 +77,19 @@ function App() {
     }
   }
 
-  // clear all items
+  
   const clearItems = () => {
     setExpenses([]);
     handleAlert({type: 'danger', text: ' all items deleted'});  
   }
-  // handleDelete
+  
   const handleDelete = (id) => {
     let tempExpenses = expenses.filter(item => item.id !== id);
 
     setExpenses(tempExpenses);
     handleAlert({type: 'danger', text: 'item deleted'});       
   }
-  // handleEdit
+  
   const handleEdit = (id) => {
     let expense = expenses.find(item => item.id === id);
     let {charge,amount} = expense;
