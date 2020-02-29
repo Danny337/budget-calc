@@ -7,13 +7,13 @@ export const ExpenseForm = ({charge,amount,handleCharge,handleAmount,handleSubmi
 
             <div className="form-center">
                 <div className="form-group">
-                    <label htmlFor="charge">charge</label>
-                    <input className="form-control" type="text" name="charge" id="charge" placeholder='e.g. rent'
+                    <label htmlFor="charge">расходы</label>
+                    <input className="form-control" type="text" name="charge" id="charge" placeholder='бензин'
                     value={charge} onChange={handleCharge}/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="amount">amount</label>
-                    <input className="form-control" type="number" name="amount" id="amount" placeholder='e.g. 100'
+                    <label htmlFor="amount">количество</label>
+                    <input className="form-control" type="number" name="amount" id="amount" placeholder='1300'
                     value={amount} onChange={handleAmount}/>
                 </div>
             </div>
