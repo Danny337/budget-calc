@@ -60,13 +60,13 @@ function App() {
         });
         setExpenses(tempExpenses);
         setEdit(false);
-        handleAlert({type: 'success', text: 'item edited'});
+        handleAlert({type: 'success', text: 'изменено'});
       }
        else {
         const singleExpense = {id: uuid(), charge, amount};
 
         setExpenses([...expenses, singleExpense]);
-        handleAlert({type: 'success', text: 'item added'});
+        handleAlert({type: 'success', text: 'добавлено'});
       }
 
       setCharge('');
