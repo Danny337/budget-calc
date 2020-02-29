@@ -105,7 +105,7 @@ function App() {
     <>
     {alert.show && <Alert type={alert.type} text={alert.text} />}
     <Alert />
-    <h1>budget calculator</h1>
+    <h1>учет бюджета</h1>
     <main className='App'>
       <ExpenseForm charge={charge} amount={amount} handleCharge={handleCharge} handleAmount={handleAmount} handleSubmit={handleSubmit} edit={edit} />
       <ExpenseList expenses={expenses} clearItems={clearItems} handleDelete={handleDelete} handleEdit={handleEdit} />
